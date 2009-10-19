@@ -1,3 +1,6 @@
+gems:
+- name: rails
+
 sites:
 - name: master
   docroot: /
