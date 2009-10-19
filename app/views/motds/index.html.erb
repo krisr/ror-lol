@@ -1,0 +1,22 @@
+<h1>Listing motds</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+<% @motds.each do |motd| %>
+  <tr>
+    <td><%=h motd.title %></td>
+    <td><%=h motd.body %></td>
+    <td><%= link_to 'Show', motd %></td>
+    <td><%= link_to 'Edit', edit_motd_path(motd) %></td>
+    <td><%= link_to 'Destroy', motd, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New motd', new_motd_path %>

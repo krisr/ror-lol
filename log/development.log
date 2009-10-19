@@ -1,0 +1,266 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 16:28:31) [GET]
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/home/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 16:37:50) [GET]
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/home/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 16:50:31) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/home/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 17:17:46) [GET]
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 17:44:10) [GET]
+Rendering home/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-16 17:44:11) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (30.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMotds (20091019061052)
+  [4;35;1mSQL (9.2ms)[0m   [0mCREATE TABLE `motds` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091019061052')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `motds`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSHOW KEYS FROM `motds`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-19 00:38:28) [GET]
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-19 00:38:43) [GET]
+Rendering home/index
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#index (for 127.0.0.1 at 2009-10-19 00:38:46) [GET]
+  [4;36;1mMotd Load (0.2ms)[0m   [0;1mSELECT * FROM `motds` [0m
+Rendering template within layouts/motds
+Rendering motds/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/motds]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#new (for 127.0.0.1 at 2009-10-19 00:38:51) [GET]
+  [4;35;1mMotd Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+Rendering template within layouts/motds
+Rendering motds/new
+Completed in 69ms (View: 65, DB: 2) | 200 OK [http://localhost/motds/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#create (for 127.0.0.1 at 2009-10-19 00:40:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JFPPIRtjH0tPBoHE5D2uZIE2/WZUh60LmiY1kMCVSY4=", "motd"=>{"body"=>"What to do, what to do. One 300 dollar hookerbot or 300 one dollar hookerbots?", "title"=>"What to do, what to do?"}}
+  [4;36;1mMotd Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mMotd Create (0.2ms)[0m   [0;1mINSERT INTO `motds` (`created_at`, `title`, `body`, `updated_at`) VALUES('2009-10-19 07:40:49', 'What to do, what to do?', 'What to do, what to do. One 300 dollar hookerbot or 300 one dollar hookerbots?', '2009-10-19 07:40:49')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/motds/1
+Completed in 10ms (DB: 4) | 302 Found [http://localhost/motds]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:40:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMotd Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mMotd Load (0.4ms)[0m   [0mSELECT * FROM `motds` WHERE (`motds`.`id` = 1) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/motds/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#index (for 127.0.0.1 at 2009-10-19 00:44:10) [GET]
+  [4;36;1mMotd Load (0.3ms)[0m   [0;1mSELECT * FROM `motds` [0m
+Rendering template within layouts/motds
+Rendering motds/index
+  [4;35;1mMotd Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+Completed in 9ms (View: 5, DB: 2) | 200 OK [http://localhost/motds]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#new (for 127.0.0.1 at 2009-10-19 00:44:24) [GET]
+  [4;36;1mMotd Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+Rendering template within layouts/motds
+Rendering motds/new
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/motds/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#create (for 127.0.0.1 at 2009-10-19 00:44:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JFPPIRtjH0tPBoHE5D2uZIE2/WZUh60LmiY1kMCVSY4=", "motd"=>{"body"=>"Well, as you can see. Its wrapper is a piece of the original U.S. constitution. It was hand-rolled by Queen Elizabeth during her 'wild' years and was burried with George Burns until grave-robbing space-mushrooms... eh, well, you know the rest.", "title"=>"Why's this grand cigar so pricy?"}}
+  [4;35;1mMotd Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMotd Create (0.2ms)[0m   [0mINSERT INTO `motds` (`created_at`, `title`, `body`, `updated_at`) VALUES('2009-10-19 07:44:36', 'Why\'s this grand cigar so pricy?', 'Well, as you can see. Its wrapper is a piece of the original U.S. constitution. It was hand-rolled by Queen Elizabeth during her \'wild\' years and was burried with George Burns until grave-robbing space-mushrooms... eh, well, you know the rest.', '2009-10-19 07:44:36')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/motds/2
+Completed in 7ms (DB: 2) | 302 Found [http://localhost/motds]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:44:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMotd Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+  [4;36;1mMotd Load (0.3ms)[0m   [0;1mSELECT * FROM `motds` WHERE (`motds`.`id` = 2) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/motds/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#index (for 127.0.0.1 at 2009-10-19 00:44:40) [GET]
+  [4;35;1mMotd Load (0.3ms)[0m   [0mSELECT * FROM `motds` [0m
+Rendering template within layouts/motds
+Rendering motds/index
+  [4;36;1mMotd Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/motds]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:46:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMotd Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+  [4;36;1mMotd Load (0.2ms)[0m   [0;1mSELECT * FROM `motds` WHERE (`motds`.`id` = 1) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 9ms (View: 2, DB: 3) | 200 OK [http://localhost/motds/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:46:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMotd Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+  [4;36;1mMotd Load (0.3ms)[0m   [0;1mSELECT * FROM `motds` WHERE (`motds`.`id` = 2) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://localhost/motds/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#index (for 127.0.0.1 at 2009-10-19 00:54:02) [GET]
+  [4;35;1mMotd Load (1.5ms)[0m   [0mSELECT * FROM `motds` [0m
+Rendering template within layouts/motds
+Rendering motds/index
+  [4;36;1mMotd Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+Completed in 13ms (View: 7, DB: 3) | 200 OK [http://localhost/motds]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#new (for 127.0.0.1 at 2009-10-19 00:54:03) [GET]
+  [4;35;1mMotd Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+Rendering template within layouts/motds
+Rendering motds/new
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/motds/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#create (for 127.0.0.1 at 2009-10-19 00:54:37) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JFPPIRtjH0tPBoHE5D2uZIE2/WZUh60LmiY1kMCVSY4=", "motd"=>{"body"=>"Fry: \"Of course I've been up all night! Not because of caffeine, it was insomnia. I couldn't stop thinking about coffee. I need a nap.\" *snores* \"Coffee time!\"\r\nBender: *gets cigar out* \"Ah, mighty fine smokable.\"\r\nFry: \"Fancy cigar. Why don't you smoke it already? Puff, puff, go, go, go, go, go!\"", "title"=>"You seem a tad wound up, buddy. And your face is greasy. Real greasy. You've been up all night?"}}
+  [4;36;1mMotd Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mMotd Create (0.2ms)[0m   [0;1mINSERT INTO `motds` (`created_at`, `title`, `body`, `updated_at`) VALUES('2009-10-19 07:54:37', 'You seem a tad wound up, buddy. And your face is greasy. Real greasy. You\'ve been up all night?', 'Fry: \"Of course I\'ve been up all night! Not because of caffeine, it was insomnia. I couldn\'t stop thinking about coffee. I need a nap.\" *snores* \"Coffee time!\"\r\nBender: *gets cigar out* \"Ah, mighty fine smokable.\"\r\nFry: \"Fancy cigar. Why don\'t you smoke it already? Puff, puff, go, go, go, go, go!\"', '2009-10-19 07:54:37')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/motds/3
+Completed in 7ms (DB: 2) | 302 Found [http://localhost/motds]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:54:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMotd Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mMotd Load (1.9ms)[0m   [0mSELECT * FROM `motds` WHERE (`motds`.`id` = 3) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 10ms (View: 2, DB: 3) | 200 OK [http://localhost/motds/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#index (for 127.0.0.1 at 2009-10-19 00:54:40) [GET]
+  [4;36;1mMotd Load (0.2ms)[0m   [0;1mSELECT * FROM `motds` [0m
+Rendering template within layouts/motds
+Rendering motds/index
+  [4;35;1mMotd Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `motds`[0m
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://localhost/motds]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:58:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMotd Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mMotd Load (0.7ms)[0m   [0mSELECT * FROM `motds` WHERE (`motds`.`id` = 3) [0m
+Rendering template within layouts/motds
+Rendering motds/show
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://localhost/motds/3]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MotdsController#show (for 127.0.0.1 at 2009-10-19 00:58:47) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mMotd Columns (4.5ms)[0m   [0;1mSHOW FIELDS FROM `motds`[0m
+  [4;35;1mMotd Load (0.6ms)[0m   [0mSELECT * FROM `motds` WHERE (`motds`.`id` = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Motd with ID=4):
+  app/controllers/motds_controller.rb:16:in `show'
+  haml (2.0.10) rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (not_found)

@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @motd.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @motd.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_motd_path(@motd) %> |
+<%= link_to 'Back', motds_path %>
