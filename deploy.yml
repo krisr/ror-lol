@@ -1,0 +1,5 @@
+sites:
+- name: master
+  docroot: /
+  http: true
+  https: false
