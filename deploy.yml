@@ -2,3 +2,9 @@ gems:
 - name: mysql
 - name: rails
   version: 2.3.4
+
+sites:
+- name: master
+  docroot: /
+  http: true
+  https: false
