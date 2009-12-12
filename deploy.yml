@@ -1,5 +1,6 @@
 gems:
 - name: mysql
+  version: >= 2.8
 - name: rails
   version: 2.3.4
 
